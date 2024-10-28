@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "Home": "الرئيسية",
+    "products": "المنتجات",
+    "sign Out": "تسجيل الخروج",
+    "Top": "تخفيضات الصيف على جميع ملابس السباحة وتوصيل سريع مجاني - خصم 50%! تسوق الآن",
+    "categories": "الفئات"
+  },
+  "secOne": {
+    "Today’s": "اليوم",
+    "Flash Sales": "عروض سريعة",
+    "View All Products": "عرض جميع المنتجات"
+  },
+  "secTwo": {
+    "Category": "الفئات",
+    "Browse By Category": "تصفح حسب الفئة",
+    "View All Products": "عرض جميع المنتجات",
+    "music": "الموسيقى",
+    "Women's Fashion": "أزياء النساء",
+    "SuperMarket": "السوبر ماركت",
+    "Baby & Toys": "الأطفال والألعاب",
+    "Electronics": "الإلكترونيات",
+    "Men's Fashion": "أزياء الرجال"
+  },
+  "secThree": {
+    "This Month": "هذا الشهر",
+    "Best Selling Products": "أفضل المنتجات مبيعاً",
+    "View All Products": "عرض جميع المنتجات"
+  },
+  "secFour": {
+    "Our Products": "منتجاتنا",
+    "Explore Our Products": "استكشف منتجاتنا",
+    "View All Products": "عرض جميع المنتجات"
+  },
+  "secFive": {
+    "FREE AND FAST DELIVERY": "توصيل مجاني وسريع",
+    "Free delivery for all orders over $140": "توصيل مجاني لجميع الطلبات التي تزيد عن 140 دولاراً",
+    "24/7 CUSTOMER SERVICE": "خدمة العملاء 24/7",
+    "Friendly 24/7 customer support": "دعم عملاء ودود على مدار الساعة",
+    "MONEY BACK GUARANTEE": "ضمان استرداد الأموال",
+    "We return money within 30 days": "نقوم بإرجاع الأموال خلال 30 يوماً"
+  }
+}

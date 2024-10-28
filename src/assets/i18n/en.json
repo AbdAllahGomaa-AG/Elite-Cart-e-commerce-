@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "Home": "Home",
+    "products": "products",
+    "sign Out": "sign Out",
+    "Top": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! ShopNow",
+    "categories":"categories"
+  },
+  "navAbove ": {
+  },
+  "secOne": {
+    "Today’s": "Today’s",
+    "Flash Sales": "Flash Sales",
+    "View All Products": "View All Products"
+  },
+  "secTwo": {
+    "Category": "Category",
+    "Browse By Category": "Browse By Category",
+    "View All Products": "View All Products",
+    "music": "music",
+    "Women's Fashion": "Women's Fashion",
+    "SuperMarket": "SuperMarket",
+    "Baby & Toys": "Baby & Toys",
+    "Electronics": "Electronics",
+    "Men's Fashion": "Men's Fashion"
+  },
+  "secThree": {
+    "This Month": "This Month",
+    "Best Selling Products": "Best Selling Products",
+    "View All Products": "View All Products"
+  },
+  "secFour": {
+    "Our Products": "Our Products",
+    "Explore Our Products": "Explore Our Products",
+    "View All Products": "View All Products"
+  },
+  "secFive": {
+    "FREE AND FAST DELIVERY": "FREE AND FAST DELIVERY",
+    "Free delivery for all orders over $140": "Free delivery for all orders over $140",
+    "24/7 CUSTOMER SERVICE": "24/7 CUSTOMER SERVICE",
+    "Friendly 24/7 customer support": "Friendly 24/7 customer support",
+    "MONEY BACK GUARANTEE": "MONEY BACK GUARANTEE",
+    "We return money within 30 days": "We return money within 30 days"
+  }
+}

@@ -1,0 +1,91 @@
+<!--  -->
+<section class="relative mt-5 mb-5">
+  <div class="mx-auto px-4 sm:px-6 lg:px-0">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mx-auto max-md:px-2">
+      <div class="img">
+        <div class="img-box h-full max-lg:mx-auto">
+          <img
+            [src]="detailsProducts.imageCover"
+            [alt]="detailsProducts.title"
+            class="w-[50%] mx-auto max-lg:mx-auto lg:ml-auto h-full object-cover"
+            loading="lazy"
+          />
+          <!-- <div class="main-slider">
+            @for (image of productImage.slice(0,4); track image) {
+            <div class="mx-auto">
+              <img [src]="image" alt="Image 1" class="w-[75%]" />
+            </div>
+            }
+          </div> -->
+        </div>
+      </div>
+
+      <div
+        class="data w-full lg:pr-8 pr-0 xl:justify-start justify-center flex items-center max-lg:pb-10 xl:my-2 lg:my-5 my-0"
+      >
+        <div class="data w-full max-w-xl">
+          <!-- title -->
+          <h2
+            class="font-manrope font-bold text-3xl leading-10 text-gray-900 mb-2 capitalize"
+          >
+            @if(detailsProducts.title){
+            {{ detailsProducts.title.split(" ", 5).join(" ") }}
+            }
+          </h2>
+          <!-- price - rate -->
+          <div class="flex flex-col sm:flex-row sm:items-center mb-6">
+            <h6
+              class="font-manrope font-semibold text-2xl leading-9 text-[#db4444] pr-5 sm:border-r border-gray-200 mr-5"
+            >
+              {{ detailsProducts.price }} EG
+            </h6>
+            <div class="flex items-center gap-2">
+              <div
+                class="flex items-center gap-1 sm:border-r border-gray-200 mr-1"
+              >
+                @for (num of
+                [1,2,3,4,5].slice(0,detailsProducts.ratingsAverage); track
+                $index) {
+
+                <span><i class="fas fa-star text-yellow-300"> </i> </span>
+
+                } @if(detailsProducts.ratingsAverage%1!==0){
+                <span
+                  ><i class="fa-solid fa-star-half-stroke text-yellow-300"> </i>
+                </span>
+
+                }
+                <span class="text-base text-gray-500 mr-1">
+                  ({{ detailsProducts.ratingsAverage }})</span
+                >
+              </div>
+              <span
+                class="pl-2 font-normal leading-7 text-gray-500 text-sm mr-1"
+                >{{ detailsProducts.ratingsQuantity }}</span
+              >
+            </div>
+          </div>
+          <p class="text-gray-500 text-base font-normal mb-5">
+            {{ detailsProducts.description }}
+          </p>
+
+          <div class="flex items-center gap-3">
+            <button
+            (click)="addToWishlist(detailsProducts.id)"
+              class="group transition-all duration-500 p-4 rounded-full bg-gray-100 hover:bg-[#db4444] hover:shadow-sm hover:text-white"
+            >
+
+              <i class="fas fa-heart"></i>
+            </button>
+            <button
+              (click)="addToCart(detailsProducts.id)"
+              class="text-center w-full px-5 py-4 rounded-[100px] bg-[#db4444] flex items-center justify-center font-semibold text-lg text-white shadow-sm transition-all duration-500 hover:bg-[#bd3737] hover:shadow-indigo-400"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

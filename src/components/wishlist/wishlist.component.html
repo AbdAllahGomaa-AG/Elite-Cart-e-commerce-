@@ -1,0 +1,73 @@
+@if(count !==0){
+<section class="py-24 relative">
+  <div class="w-full max-w-7xl px-4 md:px-5 lg:px-6 mx-auto">
+    <div class="flex-row md:flex justify-between items-center mb-3 text-center">
+      <h2
+        class="title font-manrope font-bold text-4xl leading-10 mb-8 text-black"
+      >
+        Wishlist
+      </h2>
+    </div>
+
+    @for ( item of carWishlist ; track item.id) {
+    <div
+      class="rounded-3xl border-2 border-gray-200 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4"
+    >
+      <div class="col-span-12 lg:col-span-2">
+        <img
+          [src]="item.imageCover"
+          [alt]="item.title"
+          class="max-lg:w-full lg:w-[180px] rounded-lg object-cover"
+        />
+      </div>
+
+      <div class="col-span-12 lg:col-span-10 w-full lg:pl-3">
+        <div class="flex items-center justify-between w-full mb-4">
+          <h5 class="font-manrope font-bold text-2xl leading-9 text-gray-900">
+            {{ item.title }}
+          </h5>
+
+          <button
+            (click)="deleteItem(item.id)"
+            class="group transition-all duration-500 p-4 rounded-full bg-gray-100 hover:bg-[#db4444] hover:shadow-sm hover:text-white"
+          >
+            <i
+              class="fa-solid fa-trash-can text-xl hover:text-yellow-300 ransition-all duration-200"
+            ></i>
+          </button>
+        </div>
+        <!--  -->
+        <div class="flex items-center justify-between w-full mb-4">
+          <h5 class="font-manrope font-bold text-2xl leading-9text-[#db4444]">
+            {{ item.price | currency : "EUR" }}
+          </h5>
+          <button
+            (click)="addToCartCount(item.id)"
+            class="group transition-all duration-500 p-4 rounded-full bg-gray-100 hover:bg-[#db4444] hover:shadow-sm hover:text-white"
+          >
+            <i
+              class="fa-solid fa-cart-shopping text-xl hover:text-yellow-300 ransition-all duration-200"
+            ></i>
+          </button>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-4"></div>
+          <h6 class="font-manrope font-bold text-2xl leading-9 text-right"></h6>
+        </div>
+      </div>
+    </div>
+    }
+    <!-- Repeat block for second speaker -->
+
+    <div
+      class="flex flex-col md:flex-row items-center justify-between lg:px-6 pb-6 border-b border-gray-200 max-lg:max-w-lg max-lg:mx-auto"
+    >
+      <div class="flex items-center justify-between gap-5"></div>
+    </div>
+    <div class="max-lg:max-w-lg max-lg:mx-auto"></div>
+  </div>
+</section>
+}@else {
+  
+}
